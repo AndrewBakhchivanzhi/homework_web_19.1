@@ -377,6 +377,7 @@ if __name__ == "__main__":
     try:
         webServer.serve_forever()
     except KeyboardInterrupt:
+        # Корректный способ остановить сервер в консоли через сочетание клавиш Ctrl + C
         pass
 
     webServer.server_close()
